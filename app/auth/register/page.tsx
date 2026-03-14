@@ -44,7 +44,7 @@ export default function RegisterPage() {
       no_hp: form.no_hp,
       alamat: form.alamat,
       saldo: 0,
-    })
+    } as any)
 
     if (profileError) {
       setError('Akun dibuat tapi gagal simpan profil. Hubungi admin.')

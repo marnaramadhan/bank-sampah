@@ -67,7 +67,7 @@ export default function TarikDanaNasabah() {
       metode: form.metode,
       catatan: form.catatan || null,
       status: 'pending',
-    })
+    } as any)
 
     if (err) {
       setError('Gagal mengajukan. ' + err.message)

@@ -60,7 +60,7 @@ export default function InputPenimbanganBaru() {
       total_nilai: totalNilai,
       status: 'selesai',
       catatan: form.catatan || null,
-    })
+    } as any)
 
     if (err) {
       setError('Gagal menyimpan. ' + err.message)

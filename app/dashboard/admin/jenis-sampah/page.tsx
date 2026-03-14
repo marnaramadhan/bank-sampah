@@ -50,7 +50,7 @@ export default function JenisSampahPage() {
       harga_nasabah: parseFloat(addForm.harga_nasabah),
       harga_pengepul: parseFloat(addForm.harga_pengepul),
       aktif: true,
-    })
+    } as any)
     await loadData()
     setAddForm({ nama: '', kategori: '', harga_nasabah: '', harga_pengepul: '' })
     setShowAdd(false)

@@ -60,7 +60,7 @@ export default function PenjualanPengepulPage() {
       harga_saat_jual: selectedJenis!.harga_pengepul,
       total_nilai: totalNilai,
       catatan: form.catatan || null,
-    })
+    } as any)
 
     if (err) {
       setError('Gagal menyimpan. ' + err.message)

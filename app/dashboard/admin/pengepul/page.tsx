@@ -27,7 +27,7 @@ export default function AdminPengepulPage() {
       no_hp: form.no_hp || null,
       alamat: form.alamat || null,
       status: 'aktif',
-    })
+    } as any)
     await loadData()
     setForm({ nama: '', no_hp: '', alamat: '' })
     setShowAdd(false)
