@@ -14,7 +14,7 @@ export default async function AdminNasabahPage() {
   const { data: nasabah } = await supabase
     .from('nasabah')
     .select('*')
-    .order('created_at', { ascending: false })
+    .order('created_at', { ascending: false }) as { data: any[] | null }
 
   const total = nasabah?.length ?? 0
   const totalSaldo = nasabah?.reduce((s, n) => s + n.saldo, 0) ?? 0
