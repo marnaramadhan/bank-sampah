@@ -7,7 +7,7 @@ function formatRupiah(n: number) {
 }
 
 export default async function PengurusDashboard() {
-  const supabase = createClient()
+  const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
 

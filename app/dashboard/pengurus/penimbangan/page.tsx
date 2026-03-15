@@ -8,7 +8,7 @@ function formatRupiah(n: number) {
 }
 
 export default async function PenimbanganPengurusPage() {
-  const supabase = createClient()
+  const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/login')
 
