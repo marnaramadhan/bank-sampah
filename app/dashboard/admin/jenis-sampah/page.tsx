@@ -37,7 +37,7 @@ export default function JenisSampahPage() {
   }
 
   async function handleToggleAktif(id: string, aktif: boolean) {
-    await supabase.from('jenis_sampah').update({ aktif: !aktif }).eq('id', id)
+    await (supabase.from('jenis_sampah') as any).update({ aktif: !aktif }).eq('id', id)
     setData(prev => prev.map(j => j.id === id ? { ...j, aktif: !aktif } : j))
   }
 
