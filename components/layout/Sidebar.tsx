@@ -28,6 +28,8 @@ const navItems: Record<Role, { href: string; label: string; icon: React.ElementT
     { href: '/dashboard/admin/tarik-dana', label: 'Tarik Dana', icon: Wallet },
     { href: '/dashboard/admin/pengepul', label: 'Pengepul', icon: Package },
     { href: '/dashboard/admin/jenis-sampah', label: 'Jenis Sampah', icon: Settings },
+    { href: '/dashboard/pengurus/penimbangan/baru', label: 'Input Timbang', icon: Scale },
+    { href: '/dashboard/pengurus/penjualan', label: 'Jual ke Pengepul', icon: ShoppingCart },
   ],
 }
 
