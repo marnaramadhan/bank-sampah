@@ -75,7 +75,7 @@ export default function Sidebar({ role, nama, viewMode, hasNasabahProfile }: Sid
     <>
       {/* Logo */}
       <div className="flex items-center gap-3 px-5 py-5 border-b border-gray-100">
-        <div className="w-9 h-9 rounded-xl overflow-hidden shrink-0">
+        <div className="w-9 h-9 rounded-full overflow-hidden shrink-0">
             <Image src="/logo.jpeg" width={36} height={36} alt="Logo" className="object-cover w-full h-full" />
         </div>
         <div className="flex-1">
@@ -150,7 +150,7 @@ export default function Sidebar({ role, nama, viewMode, hasNasabahProfile }: Sid
           <Menu className="w-5 h-5" />
         </button>
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg overflow-hidden">
+          <div className="w-7 h-7 rounded-full overflow-hidden">
             <Image src="/logo.jpeg" width={28} height={28} alt="Logo" className="object-cover w-full h-full" />
           </div>
           <p className="text-sm font-bold text-gray-900">BSU Raja 007</p>
