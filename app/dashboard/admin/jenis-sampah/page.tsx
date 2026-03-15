@@ -27,10 +27,10 @@ export default function JenisSampahPage() {
 
   async function handleSaveEdit(id: string) {
     setLoading(true)
-    await supabase.from('jenis_sampah').update({
+    await (supabase.from('jenis_sampah') as any).update({
       persentase_nasabah: parseFloat(editForm.harga_nasabah),
       harga_pengepul: parseFloat(editForm.harga_pengepul),
-    } as any).eq('id', id)
+    }).eq('id', id)
     await loadData()
     setEditingId(null)
     setLoading(false)
