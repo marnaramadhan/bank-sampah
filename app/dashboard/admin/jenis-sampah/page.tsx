@@ -30,7 +30,7 @@ export default function JenisSampahPage() {
     await supabase.from('jenis_sampah').update({
       persentase_nasabah: parseFloat(editForm.harga_nasabah),
       harga_pengepul: parseFloat(editForm.harga_pengepul),
-    }).eq('id', id)
+    } as any).eq('id', id)
     await loadData()
     setEditingId(null)
     setLoading(false)
