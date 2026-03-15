@@ -90,12 +90,12 @@ export default function Sidebar({ role, nama, viewMode, hasNasabahProfile }: Sid
       )}
 
       <nav className="flex-1 px-3 py-4 space-y-0.5">
-        {navItems[activeRole].map(item => {
+        {navItems[activeRole].map((item, index) => {
           const Icon = item.icon
           const active = pathname === item.href
           return (
             <Link
-              key={item.href}
+              key={`${item.href}-${index}`}
               href={item.href}
               className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-colors ${
                 active
